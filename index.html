@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Professores - IFCE</title>
+    
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="ifce-header">
+        <h1>Portal de Docentes | IFCE</h1>
+    </header>
+
+    <main class="container">
+        <div id="lista-professores">
+            <p class="loading">Carregando dados dos professores...</p>
+        </div>
+    </main>
+
+    <script id="professor-template" type="text/x-handlebars-template">
+        {{#each this}}
+        <div class="card-professor">
+            <div class="card-header">
+                <img src="{{foto}}" alt="Foto de {{nome}}" class="perfil-img">
+            </div>
+            <div class="card-body">
+                <h2 class="nome">{{nome}}</h2>
+                <p class="cargo">{{cargo}}</p>
+                <hr>
+                <p class="campus">📍 {{campus}}</p>
+                <p class="curso">📚 {{curso}}</p>
+                <p class="bio">"{{bio}}"</p>
+                
+                <div class="habilidades">
+                    {{#each habilidades}}
+                        <span class="badge">{{this}}</span>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </script>
+
+    <script src="app.js"></script>
+</body>
+</html>

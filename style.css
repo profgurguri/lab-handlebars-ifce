@@ -1,0 +1,91 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Cabeçalho IFCE */
+.ifce-header {
+    background-color: #2F9E41; /* Verde IFCE */
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    border-bottom: 5px solid #CD192E; /* Vermelho IFCE */
+}
+
+.container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Grid para os Cards */
+#lista-professores {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+/* Estilo do Card do Professor */
+.card-professor {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card-professor:hover {
+    transform: translateY(-5px);
+}
+
+.card-header {
+    background-color: #e9ecef;
+    text-align: center;
+    padding: 2rem 0 1rem;
+}
+
+.perfil-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #2F9E41;
+}
+
+.card-body {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.nome { color: #2F9E41; margin-bottom: 0.5rem; }
+.cargo { font-weight: bold; color: #555; }
+hr { margin: 1rem 0; border: 0; border-top: 1px solid #eee; }
+.campus, .curso { font-size: 0.9rem; color: #666; margin-bottom: 0.3rem; }
+.bio { font-style: italic; font-size: 0.95rem; margin: 1rem 0; color: #444; }
+
+/* Badges de Habilidades */
+.habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.badge {
+    background-color: #CD192E;
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.loading { text-align: center; font-size: 1.2rem; color: #666; }

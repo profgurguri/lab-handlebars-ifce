@@ -1,0 +1,24 @@
+	{
+	  "professores": [
+	    {
+	      "id": 1,
+	      "nome": "Jefferson Lourenço Gurguri",
+	      "cargo": "Coordenador e Professor",
+	      "curso": "Informática para Internet EaD",
+	      "campus": "IFCE - Campus Baturité",
+	      "bio": "Entusiasta da cultura maker, desenvolvimento web e inovação em tecnologias educacionais.",
+	      "habilidades": ["JavaScript", "Node.js", "Gestão de TI"],
+	      "foto": "https://ui-avatars.com/api/?name=Jefferson+Gurguri&background=2F9E41&color=fff&size=150"
+	    },
+	    {
+	      "id": 2,
+	      "nome": "Kelvia Fragoso",
+	      "cargo": "Professora",
+	      "curso": "Informática para Internet EaD",
+	      "campus": "IFCE - Campus Baturité",
+	      "bio": "Especialista focada no ensino e aplicação de infraestrutura de redes e metodologias de software.",
+	      "habilidades": ["Redes", "Gestão de Projetos", "Engenharia de Software"],
+	      "foto": "https://ui-avatars.com/api/?name=Kelvia+Fragoso&background=CD192E&color=fff&size=150"
+	    }
+	  ]
+	}
